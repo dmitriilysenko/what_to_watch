@@ -73,7 +73,6 @@ def add_opinion():
         raise InvalidAPIUsage('В запросе отсутствуют обязательные поля')
     if Opinion.query.filter_by(text=data['text']).first() is not None:
         raise InvalidAPIUsage('Такое мнение уже есть в базе данных')
-
     # Создать новый пустой экземпляр модели.
     opinion = Opinion()
     # Наполнить экземпляр данными из запроса.

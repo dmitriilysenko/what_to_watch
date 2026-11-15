@@ -1,5 +1,3 @@
-# what_to_watch/opinions_app/dropbox.py
-
 import json
 
 import requests
